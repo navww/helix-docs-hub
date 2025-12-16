@@ -8,13 +8,12 @@ export default defineConfig(({ mode }) => ({
   // Set the base path for GitHub Pages
   // For user/organization pages: "/"
   // For project pages: "/<repository-name>/"
-  base: "/",
+  base: "/helix-docs-hub/",
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  base: '/helix-docs-hub/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
