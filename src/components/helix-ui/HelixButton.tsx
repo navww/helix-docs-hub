@@ -3,17 +3,17 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const helixButtonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-foreground text-background hover:bg-foreground/90 shadow-soft hover:shadow-medium",
-        primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-glow",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border",
-        outline: "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground",
-        ghost: "text-foreground hover:bg-secondary",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        success: "bg-success text-success-foreground hover:bg-success/90",
+        default: "bg-foreground text-background hover:bg-foreground/90 shadow-sm hover:shadow-md",
+        primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border shadow-sm hover:shadow-md",
+        outline: "border border-primary text-primary bg-transparent hover:bg-primary/10 shadow-sm hover:shadow-md",
+        ghost: "text-foreground hover:bg-secondary/80 shadow-sm hover:shadow-md",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm hover:shadow-md",
+        success: "bg-success text-success-foreground hover:bg-success/90 shadow-sm hover:shadow-md",
       },
       size: {
         sm: "h-8 px-3 text-xs",

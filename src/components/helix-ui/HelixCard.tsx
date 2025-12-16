@@ -8,17 +8,17 @@ interface HelixCardProps extends React.HTMLAttributes<HTMLDivElement> {
 const HelixCard = React.forwardRef<HTMLDivElement, HelixCardProps>(
   ({ className, variant = "default", ...props }, ref) => {
     const variantStyles = {
-      default: "bg-card border border-border",
-      elevated: "bg-card shadow-medium",
-      outlined: "bg-transparent border-2 border-border",
-      glass: "glass",
+      default: "bg-card border border-border shadow-sm",
+      elevated: "bg-card shadow-lg border border-border",
+      outlined: "bg-transparent border-2 border-border hover:bg-secondary/50 transition-colors",
+      glass: "glass backdrop-blur-sm border border-border/30",
     };
 
     return (
       <div
         ref={ref}
         className={cn(
-          "rounded-xl p-6 transition-all duration-200",
+          "rounded-xl p-6 transition-all duration-300",
           variantStyles[variant],
           className
         )}

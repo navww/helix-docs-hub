@@ -79,7 +79,7 @@ export function CodeBlock({ code, language = "tsx", showLineNumbers = false, cla
   const lines = code.split("\n");
 
   return (
-    <div className={cn("relative group rounded-xl overflow-hidden", className)}>
+    <div className={cn("relative group rounded-xl overflow-hidden shadow-sm transition-theme", className)}>
       <div className="flex items-center justify-between px-4 py-2 bg-code-background border-b border-border/20">
         <span className="text-xs font-mono text-muted-foreground uppercase">{language}</span>
         <button

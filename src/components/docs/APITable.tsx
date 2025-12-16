@@ -16,7 +16,7 @@ interface APITableProps {
 
 export function APITable({ props, className }: APITableProps) {
   return (
-    <div className={cn("rounded-xl border border-border overflow-hidden", className)}>
+    <div className={cn("rounded-xl border border-border overflow-hidden shadow-sm transition-theme", className)}>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
@@ -29,7 +29,7 @@ export function APITable({ props, className }: APITableProps) {
           </thead>
           <tbody className="divide-y divide-border">
             {props.map((prop) => (
-              <tr key={prop.name} className="bg-card hover:bg-secondary/30 transition-colors">
+              <tr key={prop.name} className="bg-card hover:bg-secondary/30 transition-colors transition-theme">
                 <td className="px-4 py-3 font-mono text-sm">
                   <span className="text-primary font-medium">{prop.name}</span>
                   {prop.required && (

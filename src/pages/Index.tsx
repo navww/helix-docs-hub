@@ -1,5 +1,6 @@
 import { DocsLayout } from "@/components/layout/DocsLayout";
 import { HelixButton } from "@/components/helix-ui";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Palette, Code, Layers } from "lucide-react";
 
@@ -56,7 +57,7 @@ const Index = () => {
             </HelixButton>
           </Link>
           <a 
-            href="https://github.com" 
+            href="https://github.com/navww/helix-docs-hub" 
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -74,7 +75,7 @@ const Index = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group p-6 rounded-xl border border-border bg-card hover:shadow-soft transition-all duration-300 animate-fade-in"
+              className="group p-6 rounded-xl border border-border bg-card hover:shadow-soft transition-all duration-300 animate-fade-in shadow-sm hover:shadow-md"
               style={{ animationDelay: `${0.1 + index * 0.05}s` }}
             >
               <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
@@ -106,7 +107,7 @@ const Index = () => {
             <Link
               key={component.name}
               to={component.href}
-              className="group p-4 rounded-xl border border-border hover:border-primary/50 bg-card hover:shadow-soft transition-all duration-300"
+              className="group p-4 rounded-xl border border-border hover:border-primary/50 bg-card hover:shadow-soft transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <div className="flex items-center justify-between">
                 <div>

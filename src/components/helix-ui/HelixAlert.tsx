@@ -4,15 +4,15 @@ import { cn } from "@/lib/utils";
 import { X, CheckCircle, AlertCircle, Info, AlertTriangle } from "lucide-react";
 
 const helixAlertVariants = cva(
-  "relative w-full rounded-lg border p-4 flex gap-3 transition-all duration-300",
+  "relative w-full rounded-lg border p-4 flex gap-3 transition-all duration-300 shadow-sm",
   {
     variants: {
       variant: {
-        default: "bg-secondary border-border text-foreground",
-        success: "bg-success/10 border-success/30 text-success",
-        error: "bg-destructive/10 border-destructive/30 text-destructive",
-        warning: "bg-warning/10 border-warning/30 text-warning",
-        info: "bg-primary/10 border-primary/30 text-primary",
+        default: "bg-secondary/80 border-border text-foreground",
+        success: "bg-success/10 border-success/30 text-success shadow-success/10",
+        error: "bg-destructive/10 border-destructive/30 text-destructive shadow-destructive/10",
+        warning: "bg-warning/10 border-warning/30 text-warning shadow-warning/10",
+        info: "bg-primary/10 border-primary/30 text-primary shadow-primary/10",
       },
     },
     defaultVariants: {

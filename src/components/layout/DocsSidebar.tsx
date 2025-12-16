@@ -206,7 +206,7 @@ export function DocsSidebar({ className }: DocsSidebarProps) {
       {/* Mobile sidebar */}
       <aside
         className={cn(
-          "lg:hidden fixed inset-y-0 left-0 z-50 w-72 bg-sidebar transform transition-transform duration-300 border-r border-sidebar-border flex flex-col",
+          "lg:hidden fixed inset-y-0 left-0 z-50 w-72 bg-sidebar transform transition-transform duration-300 border-r border-sidebar-border flex flex-col shadow-elevated",
           isMobileOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
@@ -222,7 +222,7 @@ export function DocsSidebar({ className }: DocsSidebarProps) {
       {/* Desktop sidebar */}
       <aside
         className={cn(
-          "hidden lg:flex flex-col fixed inset-y-0 left-0 z-30 bg-sidebar border-r border-sidebar-border transition-all duration-300",
+          "hidden lg:flex flex-col fixed inset-y-0 left-0 z-30 bg-sidebar border-r border-sidebar-border transition-all duration-300 shadow-soft",
           isCollapsed ? "w-16" : "w-64",
           className
         )}
