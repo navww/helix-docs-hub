@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
   // Set the base path for GitHub Pages
   // For user/organization pages: "/"
   // For project pages: "/<repository-name>/"
-  base: "/helix-docs-hub/",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
